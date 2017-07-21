@@ -1,0 +1,10 @@
+page-settings {
+    .setting-list button[ion-item]{
+        border-bottom: 1px solid lighten($border-color-dark-grey, 60%) !important;
+        padding:10px;
+    }
+    .setting-list{
+        /*margin-right:5px;
+        margin-left:5px;*/
+    }
+}

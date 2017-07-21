@@ -1,0 +1,36 @@
+page-information{  
+    .chat-member-list{
+        margin-bottom: 0;
+        ion-item{
+            padding-left: 0;
+            ion-icon{
+                margin-right: 0;
+                font-size: 24pt;
+            }
+        }
+      
+        button[ion-item]:first-of-type{
+            padding-left: 0.7px;
+            color: $startup-page-color;
+            .item-inner{
+                margin-right: 0;
+            }
+            ion-icon{
+                font-size: 40px;
+            }
+            ion-icon, ion-label{
+                margin-top: 5px;
+            }
+        }
+
+        .input-wrapper{
+            border-bottom: none;
+        }
+
+        .item-md ion-icon[item-left] + .item-inner{
+            margin-left: 8px;
+        }
+    }  
+}
+
+

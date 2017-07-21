@@ -1,0 +1,20 @@
+<div class="register-container">
+  <div class="box-container">
+    <div class="box-main">
+      <div class="box-shadow">
+        <h1 class="page-heading">{{langScrTitle}}</h1>
+        <ion-list>
+          <ion-item [class.selected]="lang === selectedLang" class="language-list" *ngFor="let lang of langs" (click)="onSelect(lang)">
+            <ion-avatar item-left>
+              <img [src]="lang.image">
+            </ion-avatar>
+            <span>{{lang.name}}</span>
+          </ion-item>
+        </ion-list>
+        <div class="bottom-buttons">
+          <button ion-button class="next-btn" (click)="push()">{{nextBtn}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #387ef5,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  // Custom App Theme Colors
+  base-blue:  #4162FF,
+  base-pink:  #FFC3C2,
+  base-grey:  #2C3C46,
+  base-white: #ffffff
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+
+
+//Custom Variables for Color;
+$base-white:  #ffffff;
+$grey:        #F6F6F6;
+$red:         #E53935;
+$base-blue:   #4162FF;
+$base-pink:   #FFC3C2;
+$base-grey:   #2C3C46;
+$black:       #000000;
+$grey-darker: #c8c7cc;
+$blue-lighter:#F5F7FF;
+
+
+
+//overriding-ionic-variables
+$list-text-color:               $base-grey;
+$toolbar-ios-title-text-color:  $base-white;
+$toolbar-md-title-text-color:   $base-white;
+$content-ios-outer-background:  $grey;
+$tabs-ios-tab-icon-size:        26px;
+//$tabs-md-tab-icon-size:         26px;
+$tabs-md-tab-font-size:         1.0rem;
+$tabs-md-tab-font-size-active:  1.2rem;
+$tabs-md-tab-icon-transform-active: translate3d(0, -1px, 0)
+
+
+
+//Color mapping list
+//----------------------------------------
+/*
+    RGB                         HEX             Variables Name
+    ******************************************************************
+    rgb(44,60,70)              #2C3C46          $color(base-grey), $base-grey
+    rgba(44, 60, 76, .8)                        $font-color-dark-grey                                                         
+    rgb(65,98,255)             #4162FF          $color(base-blue), $base-blue                                                       
+    rgb(246,246,246)           #F6F6F6          $grey                                                                          
+    rgb(255,255,255)           #ffffff          $color(base-white), $base-white                                                  
+    rgb(0,0,0)                 #000000          $black
+          -                    #c8c7cc          $grey-darker
+                               #F5F7FF          $blue-lighter
+*/
+
+//ios fonts used 
+//-----------------------------------------------------------
+/*
+SanFranciscoText-Light
+SanFranciscoText-Semibold
+SanFranciscoText-Regular
+
+*/

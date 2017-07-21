@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{profileStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey">
+  <div class="white">
+    <ion-list no-lines class="profile-list">
+      <ion-item>
+        <div class="profile">
+          <div class="profile-image">
+            <img src="data:image/png;base64,{{profilePageStr.picture}}">
+          </div>
+          <ion-fab bottom center class="profile-add">
+            <button ion-fab mini color="base-white" class="profile-fab"><ion-icon name="add"></ion-icon></button>
+          </ion-fab>
+        </div>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col col-4 col-md-6 class="text-right">{{profilePageStr.name}}</ion-col>
+          <ion-col class="text-light">Name</ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col col-4 col-md-6 class="text-right">{{profilePageStr.position}}</ion-col>
+          <ion-col class="text-light">Position</ion-col>
+        </ion-row>
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col col-4 col-md-6 class="text-right">{{profilePageStr.phone}}</ion-col>
+          <ion-col class="text-light">Phone number</ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

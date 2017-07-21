@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{WallData.title}}
+    </ion-title>
+     <ion-buttons end>
+    <button ion-button icon-only (click)="openInfo()">
+        <ion-icon name="ios-help-circle-outline"></ion-icon>
+      </button>
+  </ion-buttons>
+     <ion-buttons end>
+      <button ion-button icon-only (click)="openNew()">
+        <ion-icon name="ios-add-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="grey page-home" cache-view="false">
+  <ion-list no-lines class="home-list post-list" *ngFor="let data of timelineData">
+    <ion-card class="full-width-card">
+      <ion-row class="post-header">
+        <span class="post-author">Margie Murrey</span>
+        <ion-note>{{data.date | date}}</ion-note>
+        <button ion-button class="no-padding no-margin" clear small (click)="presentPopover($event)" *ngIf="UserToken==data.creatorToken">
+           <span class="icon-more"><ion-icon name="icon-more"></ion-icon></span>
+        </button>
+      </ion-row>
+      <ion-card-header color="base-grey">{{data.text}}</ion-card-header>
+      <ion-card-content class="">
+        <div class="wall-container">
+          <ion-row>
+            <ion-col col-6 *ngFor="let each of data.media">
+              <div class="wall-card">
+                <div class="wall-card-content">
+                  <img src="data:image/png;base64,{{each.content}}">
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-card-content>
+      <div class="divider"></div>
+      <ion-row>
+        <ion-col col-2>
+          <button ion-button icon-left clear small (click)="Likes(data)">
+                  <ion-icon name="icon-like" ></ion-icon>
+                  <div>{{data.likes}}</div>
+                </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button icon-left clear small (click)="Reply(data)" *ngIf="!show">
+                  {{reply}}
+          </button>
+          <label class="item item-input" *ngIf="show">
+            <button (click)="AddReply()">send</button>
+            <input type="text" [(ngModel)]="reply">
+          </label>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>

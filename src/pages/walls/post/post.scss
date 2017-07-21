@@ -1,0 +1,60 @@
+
+page-post {
+ .full-width-card{
+     border-radius: 0;
+     margin-bottom: 0!important;    
+     .image-only{
+         margin-top: 13px;
+     }
+     ion-avatar{
+         height: 20px;
+         width: 20px;
+         margin-right: 5px;
+         img{
+             border-radius: 50% !important;
+         }
+     }
+     ion-row.post-header{
+             padding-bottom: 10px;
+     }
+     ion-row.post-header span.post-author {
+             width: 45% !important; 
+     }
+
+
+ }
+  .message-list{
+      .item{
+          background-color: $grey;
+      }
+      ion-label{
+          white-space: normal !important;
+      }
+      p{
+          margin-top: 10px;
+      }
+       ion-avatar{
+            margin-bottom: auto !important;
+            margin-right: 8px !important;
+        }   
+  }
+  
+   .footer {
+       .toolbar{
+            @include box-shadow(0px, 4px, 10px, 0px,$box-shadow-color);
+             padding: 0px; 
+        }
+        .send-button{
+            background-color: transparent !important;
+                ion-icon{
+                    font-size: 24px;
+                    -ms-transform: rotate(90deg); /* IE 9 */
+                    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+                    transform: rotate(90deg);
+             }
+        }
+        .item-inner{
+            padding-right: 0 !important;
+        }
+    }
+}

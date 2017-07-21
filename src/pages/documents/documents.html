@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{documentsStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey">
+
+  <!--<div class="no-data-container" *ngIf="hasContent">
+    <img src="./assets/images/img_doc@3x.png">
+    <p>{{noDocumentsStr}}</p>
+  </div>-->
+
+  <div class="white" *ngIf="!hasContent">
+    <ion-list class="message-list">
+      <ion-item ion-item detail-none class="unread" (click)="push()">
+        <div class="avatar-container" item-left>
+          <span class="list-badge doc-badge-dot"></span>
+        </div>
+        <h3 class="text-bold">new_document.pdf</h3>
+        <ion-note item-right>
+          <span>12:45 AM</span>
+        </ion-note>
+      </ion-item>
+      <ion-item ion-item detail-none (click)="push()">
+        <div class="avatar-container" item-left>
+        </div>
+        <h3>old_document.pdf</h3>
+        <ion-note item-right>
+          <span>12:45 AM</span>
+        </ion-note>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{settingsStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey">
+<div class="white">
+  <ion-list no-lines class="setting-list">
+    <button ion-item (click)="push(1)">{{settingPageStr.profile}}</button>
+    <button ion-item (click)="push(2)">{{settingPageStr.language}}</button>
+    <button ion-item detail-none>{{settingPageStr.helpContact}}</button>
+    <button ion-item detail-none (click)="logout()">{{settingPageStr.logout}}</button>
+  </ion-list>
+</div>
+</ion-content>

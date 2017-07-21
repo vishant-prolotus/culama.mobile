@@ -1,0 +1,29 @@
+page-home, .page-home {
+    .right{
+        color: #F4F5F6;
+        font-size: 90px;
+    }
+    .home-list{
+         margin: 20pt 8pt !important;
+    }
+    .home-list{
+        .item{
+            margin-bottom: 20px;
+            border-radius: 5pt;
+            max-height: 120px;
+            box-shadow: 0px 1px 4px 0px rgba(0, 15, 89, 0.05)
+        }
+    }
+    .input-wrapper{
+        overflow: visible; 
+    }
+    .item-error{
+        text-align: center;
+        color: $red
+    }
+    .post-list{
+         .title{
+            margin-bottom: 12px
+        }
+     }
+}

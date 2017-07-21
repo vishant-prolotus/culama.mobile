@@ -1,0 +1,22 @@
+.popover-list{
+    margin-bottom: 0;
+    button.item.item-block{
+      border-bottom: 1px solid #dedede !important;   
+      padding: 7px 7px 7px 20px;   
+    }
+}
+
+ ion-popover {
+    .popover-content{
+        //top: 109.297px !important;
+        left: 204px !important;
+        width: 160px !important;
+        border-radius: 8px !important;
+        @include box-shadow(0px, 4px, 10px, 0px, $startup-box-main-shadow-color);
+    }
+   
+ } 
+
+ .popover-ios .popover-arrow{
+        width: 0px !important; 
+ }

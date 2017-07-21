@@ -1,0 +1,5 @@
+node_modules/*
+wwww/*
+resources/*
+plugins/*
+platforms/*

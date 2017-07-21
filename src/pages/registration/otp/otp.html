@@ -1,0 +1,17 @@
+<div class="register-container">
+  <div class="box-container">
+    <div class="box-main">
+      <div class="box-shadow">
+        <h1 class="page-heading">{{welcomeTitle}}</h1>
+        <span class="page-heading-sub">{{phoneSubTitle}}</span>
+        <span class="page-text">{{smsInstructions}}</span>
+        <input type="number" placeholder="1234" class="phone-number-text confirmation-code" [value]="confirmationCode" [(ngModel)]="confirmationCode" />
+        <button ion-button class="link-small" (click)="resend()" color="dark" clear>{{resendCode}}</button>
+        <div class="bottom-buttons">
+          <button ion-button (click)="pop()" color="dark" clear>{{backBtn}}</button>
+          <button ion-button class="next-btn" (click)="push()">{{nextBtn}}</button>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>

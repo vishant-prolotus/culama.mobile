@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     {{wallInfo}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey page-wallinfo" cache-view="false">
+  <ion-list class="grey" class="info-list">
+    <ion-item>
+      <ion-row>
+        <ion-col col-3 class="text-light text-right"></ion-col>
+        <ion-col text-wrap>
+         New morning shift
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row style="margin-left: 15%;">
+        <img  src="data:image/png;base64,{{description.image}}">
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

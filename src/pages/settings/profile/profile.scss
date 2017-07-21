@@ -1,0 +1,54 @@
+page-profile{
+    .profile-list {
+        ion-item:not(:first-child){
+            border-bottom: 1px solid lighten($border-color-dark-grey, 60%) !important;
+            padding:10px;
+        }
+        ion-item:nth-child(2){
+             margin-top: 32px;
+             border-top: 1px solid lighten($border-color-dark-grey, 60%) !important;
+        }
+        ion-col{
+            padding: 10px;
+        }
+    }
+    .profile-list{
+        margin-right:5px;
+        margin-left:5px;
+    }
+    div.profile{
+        margin-top: 32px;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 1;       
+    }
+    .profile-image{
+        @include border-radius(50%);
+        width: 80pt;
+        height: 80pt;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 10px;
+        position: relative;
+        left: auto;
+        display: inline-block;
+     }
+     .profile-image img{
+        @include border-radius(50%);
+        @include box-shadow(0, 1.5px, 5px, 0, $startup-box-main-shadow-color);
+     }
+     .profile-add{
+        padding-left: 41px;
+        margin-bottom: 3px;
+     }
+     .profile-fab.fab[mini]{
+        width: 24pt;
+        height: 24pt;
+        line-height: 24pt;
+        @include box-shadow(0, 1.5px, 5px, 0, $startup-box-main-shadow-color);
+     }
+     .profile-fab.fab[mini] ion-icon{
+         font-size: 12pt;
+     }
+}

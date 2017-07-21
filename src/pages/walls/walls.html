@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{wallsStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey" cache-view="false">
+  <div class="no-data-container" *ngIf="hasContent">
+    <img src="./assets/images/image@3x.png">
+    <p>{{noWallsStr}}</p>
+  </div>
+
+  <div class="wall-container">
+    <ion-row >
+      <ion-col col-6 *ngFor="let content of wallPageContent">
+        <div class="wall-card" (click)="openPost(content.posts ,content.wallData)">
+          <div class="wall-card-content">
+            <div class="round-image">
+              <img  src="data:image/png;base64,{{content.wallData.image}}">
+            </div>
+            <p class="text-bold">
+              {{content.wallData.title}}
+            </p>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

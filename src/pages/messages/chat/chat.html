@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{'to :' +recipientsListName}}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openInfo()">
+        <ion-icon name="ios-alert-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey" cache-view="false">
+  <ion-list no-lines class="chat-list" *ngFor="let msg of messages">
+    <ion-item class="chat-right">
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          {{msg.content}}
+          <h5 style="font-weight: bold;">{{msg.name}}</h5>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-list class="no-margin" no-lines>
+      <ion-item>
+        <ion-input [(ngModel)]="message" type="text" placeholder="Type your message here"></ion-input>
+        <button item-right class="send-button" (click)="send(message)"><ion-icon  color="base-blue" name="icon-send"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-footer>
+<!-- <ion-item>
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <h2>Kim Jung</h2>
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa.
+          This is heavy.
+          <ion-note>21 Jan 2016 at 12:45 AM</ion-note>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+ <ion-item class="prev-chat-left">
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          Wait a minute.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <h2>Kim Jung</h2>
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa.
+          This is heavy.
+          <ion-note>21 Jan 2016 at 12:45 AM</ion-note>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item class="chat-right">
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          Wait a minute. Wait a minute, Doc.it a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+          DeLorean?! Whoa.
+        </ion-card-content>
+      </ion-card>
+
+    </ion-item>
+    <ion-item class="chat-right">
+      <ion-icon item-left color="danger" name="alert"></ion-icon>
+      <ion-card class="full-width-card">
+        <ion-card-content text-wrap>
+          Wait a minute, Doc.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>-->

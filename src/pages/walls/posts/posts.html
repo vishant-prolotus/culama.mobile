@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{postStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey page-home" cache-view="false">
+  <ion-list no-lines class="home-list post-list" *ngFor="let data of postData">
+    <ion-card class="full-width-card">
+      <ion-row class="post-header">
+        <span class="post-author">Margie Murrey</span>
+        <ion-note>{{data.posts.length>0 ? data.posts[0].date: 'no data'}}</ion-note>
+        <button ion-button class="no-padding no-margin" clear small (click)="presentPopover($event)">
+           <span class="icon-more"><ion-icon name="icon-more"></ion-icon></span>
+        </button>
+      </ion-row>
+      <ion-card-header color="base-grey">New info for you</ion-card-header>
+      <ion-card-content>
+        <p class="post-content">{{data.posts.length>0 ? data.posts[0].text: 'no data'}}</p>
+        <button class="no-padding" ion-button icon-left clear small>
+                    <div>{{readFullPost}}</div>
+                </button>
+      </ion-card-content>
+      <div class="divider"></div>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+                  <ion-icon name="icon-like"></ion-icon>
+                  <div>{{data.posts.length>0 ? data.posts[0].likes: 'no data'}}</div>
+                </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button icon-left clear small>
+                  <div>{{reply}}</div>
+                </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>

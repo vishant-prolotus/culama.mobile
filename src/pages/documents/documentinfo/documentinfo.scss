@@ -1,0 +1,22 @@
+page-documentinfo, .page-wallinfo{  
+    .info-list{
+        ion-row {
+            ion-col{
+                padding: 10px 10px 10px 0px;
+            }
+            ion-col:not(.text-light){
+                 margin-right: 0px;
+            }  
+        } 
+        ion-item{
+            padding-left: 10px !important;
+        }       
+        .input-wrapper{
+            border-bottom: 0.55px solid $grey-darker;
+        }    
+        .item-inner {
+            border-bottom: none !important;
+        } 
+    }
+}
+

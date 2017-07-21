@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{morningShiftCrew}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey page-home page-timeline" cache-view="false">
+
+
+  <ion-card class="full-width-card">
+    <ion-row class="post-header">
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <span class="post-author">Margie Murrey</span>
+      <ion-note>21 Jan 2016 at 12:45 AM</ion-note>
+
+    </ion-row>
+    <ion-card-header color="base-grey">Microsoft Is Creating Smartglasses For Construction Workers And Other Small Biz Tech News This Week</ion-card-header>
+    <ion-card-content class="">
+      <p class="post-content">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+        Whoa. This is heavy.</p>
+      <img class="image-only" src="./assets/images/video@3x.png">
+
+    </ion-card-content>
+    <div class="divider"></div>
+    <ion-row>
+      <ion-col col-2>
+        <button ion-button icon-left clear small>
+                  <ion-icon name="icon-like"></ion-icon>
+                  <div>2</div>
+                </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button icon-left clear small>
+                  <ion-icon name="icon-like"></ion-icon>
+                  <div>2</div>
+                </button>
+      </ion-col>
+
+      <ion-col text-right>
+        <button ion-button icon-left clear small>
+                  <div>{{reply}}</div>
+                </button>
+      </ion-col>
+
+    </ion-row>
+  </ion-card>
+
+  <div class="page-messages">
+    <ion-list class="message-list">
+      <button ion-item detail-none>
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <h2 class="text-bold">Gordon Fields  <ion-note item-right>21 Jan 2016 at 12:45 AM</ion-note> </h2>
+      <p class="text-light">Nice! Thank you!</p>
+    </button>
+      <button ion-item detail-none>
+      <ion-avatar item-left>
+        <img src="./assets/images/jun-profile.jpg">
+      </ion-avatar>
+      <h2 class="text-bold" >Jenny Lucas  <ion-note item-right>21 Jan 2016 at 12:45 AM</ion-note> </h2>
+      <p class="text-light">Exactly what I need. Ut a est at lorem sodales egestas ac eget justo. Integer vitae leo laoreet, mattis ex et, interdum mauris</p>     
+    </button>
+    </ion-list>
+  </div>
+</ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-list class="no-margin" no-lines>
+      <ion-item>
+        <ion-input type="text" placeholder="Type your message here"></ion-input>
+        <button item-right class="send-button"><ion-icon  color="base-blue" name="icon-send"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+</ion-footer>

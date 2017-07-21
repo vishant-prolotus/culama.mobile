@@ -1,0 +1,20 @@
+<ion-header align-title="center">
+  <ion-navbar>
+    <ion-title>
+      {{languageStr}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey">
+  <div class="white">
+    <ion-list no-lines class="language-list">
+      <button  [class.text-bold]="lang === selectedLang" ion-item detail-none *ngFor="let lang of langs" (click)="onSelect(lang)">
+        <ion-avatar item-left>
+            <img [src]="lang.image">
+        </ion-avatar>
+        <span>{{lang.name}}</span>
+      </button>
+    </ion-list>
+  </div>
+</ion-content>

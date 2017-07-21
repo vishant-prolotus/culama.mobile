@@ -1,0 +1,388 @@
+{
+    "common": {
+        "nextBtn": {
+            "en": "Next",
+            "fr": "Prochain",
+            "nl": "volgende",
+            "es": "Siguiente"
+        },
+        "backBtn": {
+            "en": "Back",
+            "fr": "Arrière",
+            "nl": "Terug",
+            "es": "Espalda"
+        },
+        "somethingWrongMsg": {
+            "en": "Something went wrong",
+            "fr": "Quelque chose s'est mal passé",
+            "nl": "Er is iets fout gegaan",
+            "es": "Algo salió mal"
+        },
+        "doneText":{
+            "en":"Done",
+            "fr":"Terminé",
+            "nl":"Gedaan",
+            "es":"Hecho"
+        }
+    },
+    "modules": {
+        "tabs": {
+            "home": {
+                "en": "Home",
+                "fr": "Accueil",
+                "nl": "Huis",
+                "es": "Casa"
+            },
+            "messages": {
+                "en": "Messages",
+                "fr": "Messages",
+                "nl": "berichten",
+                "es": "Mensajes"
+            },
+            "documents": {
+                "en": "Documents",
+                "fr": "Documents",
+                "nl": "documenten",
+                "es": "Documentos"
+            },
+            "walls": {
+                "en": "Walls",
+                "fr": "Des murs",
+                "nl": "muren",
+                "es": "Paredes"
+            },
+            "settings": {
+                "en": "Settings",
+                "fr": "Paramètres",
+                "nl": "instellingen",
+                "es": "Ajustes"
+            }
+        },
+        "registration": {
+            "langScrTitle": {
+                "en": "Select your language",
+                "fr": "choisissez votre langue",
+                "nl": "Selecteer je taal",
+                "es": "elige tu idioma"
+            },
+            "welcomeTitle": {
+                "en": "Welcome to Culama!",
+                "fr": "Bienvenue à Culama!",
+                "nl": "Welkom bij Culama!",
+                "es": "¡Bienvenido a Culama!"
+            },
+            "phoneSubTitle": {
+                "en": "First we have to link your account",
+                "fr": "Nous devons d'abord associer votre compte",
+                "nl": "Eerst moeten we uw account te koppelen",
+                "es": "Primero tenemos que vincular su cuenta"
+            },
+            "phoneInstructions": {
+                "en": "Enter your mobile number, please",
+                "fr": "Entrez votre numéro de portable, s'il vous plaît",
+                "nl": "Voer uw mobiele nummer, dan kunt u",
+                "es": "Introduce tu número de móvil, por favor"
+            },
+            "smsInstructions": {
+                "en": "Enter the confirmation code sent to you by SMS",
+                "fr": "Saisissez le code de confirmation envoyé par SMS",
+                "nl": "Geef de bevestigingscode per SMS naar u gestuurd",
+                "es": "Ingrese el código de confirmación que le envió SMS"
+            },
+            "resendCode": {
+                "en": "Resend the code",
+                "fr": "Renvoyez le code",
+                "nl": "Verzend de code",
+                "es": "Reenviar el código"
+            },
+            "unknownRegisterErrorMsg": {
+                "en": "There was an error while registering your phone number",
+                "fr": "Une erreur s'est produite lors de l'enregistrement de votre numéro de téléphone",
+                "nl": "Er is een fout opgetreden bij het registreren van uw telefoonnummer",
+                "es": "Se ha producido un error al registrar tu número de teléfono"
+            },
+            "invalidPhoneNumber": {
+                "en": "Phone number is emptry, or invalid",
+                "fr": "Le numéro de téléphone est empty ou invalide",
+                "nl": "Telefoonnummer is emptry, of ongeldig",
+                "es": "El número de teléfono es incompleto o no válido"
+            },
+            "phoneNotFoundMsg": {
+                "en": "Phone number not found",
+                "fr": "Numéro de téléphone non trouvé",
+                "nl": "Telefoonnummer niet gevonden",
+                "es": "Número de teléfono no encontrado"
+            },
+            "tooManyReqMsg": {
+                "en": "Too many requests in a single timespan - Wait for 5 minutes",
+                "fr": "Trop de demandes dans un même temps - Attendez 5 minutes",
+                "nl": "Te veel verzoeken in één tijdspanne - Wacht 5 minuten",
+                "es": "Demasiadas solicitudes en un solo intervalo de tiempo - Espere 5 minutos"
+            },
+            "codeIsEmptyMsg": {
+                "en": "Please enter the confirmation code sent to you by SMS",
+                "fr": "Entrez le code de confirmation qui vous est envoyé par SMS",
+                "nl": "Vul alstublieft de bevestigingscode in die u per sms heeft verzonden",
+                "es": "Por favor ingrese el código de confirmación que le envió por SMS"
+            },
+            "codeInvalidMsg": {
+                "en": "Code is invalid",
+                "fr": "Le code n'est pas valide",
+                "nl": "Code is ongeldig",
+                "es": "El código no es válido"
+            }
+        },
+        "home": {
+            "noInternetConnection": {
+                "en": "No Internet Connection",
+                "fr": "Pas de connexion Internet",
+                "nl": "Geen internet verbinding",
+                "es": "Sin conexión a Internet"
+            },
+            "postNotPublished": {
+                "en": "Post was not published",
+                "fr": "Le message n'a pas été publié",
+                "nl": "Bericht niet gepubliceerd",
+                "es": "El mensaje no fue publicado"
+            },
+            "noNewMessages": {
+                "en": "No New Messages",
+                "fr": "Pas de nouveaux messages",
+                "nl": "Geen nieuwe berichten",
+                "es": "No hay mensajes nuevos"
+            },
+            "newMessages": {
+                "en": "New messages",
+                "fr": "Nouveaux messages",
+                "nl": "Nieuwe berichten",
+                "es": "Nuevos mensajes"
+            },
+            "newMessage": {
+                "en": "New message",
+                "fr": "Nouveau message",
+                "nl": "Nieuw bericht",
+                "es": "Nuevo mensaje"
+            },
+            "noNewDocuments": {
+                "en": "No New Documents",
+                "fr": "Pas de nouveaux documents",
+                "nl": "Geen nieuwe documenten",
+                "es": "No hay documentos nuevos"
+            },
+            "newDocuments": {
+                "en": "New documents",
+                "fr": "Nouveaux documents",
+                "nl": "Nieuwe documenten",
+                "es": "Nuevos documentos"
+            },
+            "newDocument":{
+                "en":"New Document",
+                "fr":"Nouveau document",
+                "nl":"Nieuw document",
+                "es":"Nuevo documento"
+            },
+            "newPost": {
+                "en": "new posts",
+                "fr": "Nouveaux messages",
+                "nl": "nieuwe berichten",
+                "es": "Nuevos mensajes"
+            },
+            "morningShiftCrew": {
+                "en": "Morning shift crew",
+                "fr": "Équipe du matin",
+                "nl": "Ochtendploeg crew",
+                "es": "Tripulación del turno de mañana"
+            },
+            "readFullPost": {
+                "en": "Read full post...",
+                "fr": "Lire le post complet ...",
+                "nl": "Lees het volledige bericht ...",
+                "es": "Leer post completo ..."
+            },
+            "reply": {
+                "en": "Reply",
+                "fr": "Répondre",
+                "nl": "Antwoord",
+                "es": "Respuesta"
+            }
+        },
+        "setting": {
+            "profile": {
+                "en": "Profile",
+                "fr": "Profil",
+                "nl": "Profiel",
+                "es": "Perfil"
+            },
+            "language": {
+                "en": "Language",
+                "fr": "La langue",
+                "nl": "Taal",
+                "es": "Idioma"
+            },
+            "helpContact": {
+                "en": "Help & contacts",
+                "fr": "Aide et contacts",
+                "nl": "Hulp & contact",
+                "es": "Ayuda y contactos"
+            },
+            "logout": {
+                "en": "Log out",
+                "fr": "Connectez - Out",
+                "nl": "Uitloggen",
+                "es": "Cerrar sesión"
+            }
+        },
+        "information": {
+            "name": {
+                "en": "Name",
+                "fr": "Prénom",
+                "nl": "Naam",
+                "es": "Nombre"
+            },
+            "position": {
+                "en": "Position",
+                "fr": "Position",
+                "nl": "Positie",
+                "es": "Posición"
+            },
+            "phone": {
+                "en": "Phone",
+                "fr": "Téléphone",
+                "nl": "Telefoon",
+                "es": "Teléfono"
+            },
+            "creator": {
+                "en": "Creator",
+                "fr": "Créateur",
+                "nl": "Schepper",
+                "es": "Creador"
+            },
+            "description": {
+                "en": "Description",
+                "fr": "La description",
+                "nl": "Beschrijving",
+                "es": "Descripción"
+            },
+            "participants": {
+                "en": "Participants",
+                "fr": "Participants",
+                "nl": "Deelnemers",
+                "es": "Participantes"
+            },
+            "date": {
+                "en": "Date",
+                "fr": "Rendez-vous amoureux",
+                "nl": "Datum",
+                "es": "Fecha"
+            }
+        },
+        "messages": {
+            "newMessage": {
+                "en": "New message",
+                "fr": "Nouveau message",
+                "nl": "Nieuw bericht",
+                "es": "Nuevo mensaje"
+            },
+            "selectType": {
+                "en": "Select type",
+                "fr": "sélectionner le genre",
+                "nl": "selecteer type",
+                "es": "seleccione tipo"
+            },
+            "conversation": {
+                "en": "Conversation",
+                "fr": "Conversation",
+                "nl": "Gesprek",
+                "es": "Conversacion"
+            },
+            "noreplies": {
+                "en": "No replies",
+                "fr": "Aucune réponse",
+                "nl": "Geen antwoorden",
+                "es": "No hay respuestas"
+            },
+            "selectPeople": {
+                "en": "Select one or few people",
+                "fr": "Sélectionnez une ou plusieurs personnes",
+                "nl": "Selecteer één of weinig mensen",
+                "es": "Seleccione una o pocas personas"
+            },
+            "noMessageStr": {
+                "en": "Oops, you have no messages yet",
+                "fr": "Oups, vous n'avez pas encore de messages",
+                "nl": "Oeps, je hebt nog geen berichten",
+                "es": "Vaya, todavía no tienes mensajes"
+            },
+            "conversationStr": {
+                "en": "Conversation Info",
+                "fr": "Informations de conversation",
+                "nl": "Conversation Info",
+                "es": "Información de conversación"
+            },
+            "addNew": {
+                "en": "Add new",
+                "fr": "Ajouter un nouveau",
+                "nl": "Voeg nieuwe",
+                "es": "Añadir nuevo"
+            },
+            "reqRecipientErrorMsg":{
+                "en":"Please select recipients",
+                "fr":"Sélectionnez les destinataires",
+                "nl":"Selecteer de ontvangers alstublieft",
+                "es":"Seleccione los destinatarios"
+            }
+        },
+        "walls": {
+            "noWallsStr": {
+                "en": "Oops, the wall is empty",
+                "fr": "Oups, le mur est vide",
+                "nl": "Helaas is de wand leeg",
+                "es": "¡Vaya, la pared está vacía!"
+            },
+            "postStr": {
+                "en": "Manage posts",
+                "fr": "Gérer les messages",
+                "nl": "berichten beheren",
+                "es": "Administrar publicaciones"
+            },
+            "managePost": {
+                "en": "Manage your posts",
+                "fr": "Gérer vos messages",
+                "nl": "Beheer uw berichten",
+                "es": "Administrar sus mensajes"
+            },
+            "wallinfo": {
+                "en": "Wall info",
+                "fr": "Informations sur le mur",
+                "nl": "Muur info",
+                "es": "Información de la pared"
+            },
+            "post": {
+                "en": "Post",
+                "fr": "Poster",
+                "nl": "Post",
+                "es": "Enviar"
+            }
+        },
+        "documents": {
+            "noDocumentsStr": {
+                "en": "Oops, you have no documents yet",
+                "fr": "Oups, vous n'avez pas encore de documents",
+                "nl": "Oeps, je hebt nog geen documenten",
+                "es": "Ups, aún no tienes documentos"
+            },
+            "newDocuments": {
+                "en": "New documents",
+                "fr": "Nouveaux documents",
+                "nl": "nieuwe documenten",
+                "es": "Nuevos documentos"
+            },
+            "documentInfo": {
+                "en": "Document Info",
+                "fr": "Informations sur le document",
+                "nl": "document Info",
+                "es": "Información del documento"
+            }
+        }
+    }
+}

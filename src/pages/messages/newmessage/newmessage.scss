@@ -1,0 +1,77 @@
+page-newmessage{
+    .message-list{
+        margin-bottom: 17px;
+     
+        ion-item:first-of-type, button[ion-item]:first-of-type{
+             border-top:0.55px solid $grey-darker !important;
+        }   
+
+        ion-icon[item-content]{
+            font-size: 24pt;
+            padding-right: 15px;
+        }   
+    }
+
+    .message-list.odd{
+         ion-item:nth-child(odd){
+            background-color: $list-color-odd-bg;
+        }
+        ion-item:nth-child(odd).activated{
+            background-color: #d9d9d9;
+        }
+    }
+
+    .new-list{
+        margin-bottom: 0;
+        .text-blue-light{
+            color: lighten($base-blue,25%);
+        }
+        .title{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        ion-toggle{
+            margin:auto !important;
+            padding-right: 16px !important;
+        }
+        
+        .input-wrapper{
+            flex: 0.8;
+        }
+                   
+        span[item-left]{
+            margin-left: 16px;
+            margin-right: 0;
+        }
+
+    }
+
+}
+.toggle-spacing.item-md{
+       padding-left: 4%;
+ }
+
+
+
+ /**** Start new_message listing *******
+ //add following css if in case need to create new page for new_message
+
+ ion-list[inset]{
+            margin: 0px 5px 5px 5px !important;
+    }    
+    .message-list{
+        .item-inner{
+            border-bottom: none !important;
+        }
+        ion-item, button[ion-item]{
+            border-bottom:0.55px solid #c8c7cc !important;
+            padding: 5px 0px 5px 5px;
+        }
+        ion-icon[item-content]{
+            padding-right: 3px;
+        }
+        
+    }
+     
+**** Start new_message listing ********/
+     

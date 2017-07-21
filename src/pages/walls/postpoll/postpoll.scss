@@ -1,0 +1,34 @@
+
+page-postpoll {
+ .full-width-card{
+     border-radius: 0;
+     margin-bottom: 0!important;    
+     .image-only{
+         margin-top: 13px;
+     }
+     ion-avatar{
+         height: 20px;
+         width: 20px;
+         margin-right: 5px;
+         img{
+             border-radius: 50% !important;
+         }
+     }
+     ion-row.post-header{
+             padding-bottom: 10px;
+     }
+     ion-row.post-header span.post-author {
+             width: 45% !important; 
+     }
+     p.post-content{
+         margin-bottom: 10px;
+     }
+     .poll button{
+         color:$font-color-darker-grey;
+         margin-bottom: 8px !important;
+     }
+
+
+ }
+
+}

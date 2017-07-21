@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{newMessagePageStr.newMessage}}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNewMsgScreen()">
+        <ion-icon name="md-checkmark"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<!-- Contents both new_message list and new_conversation design -->
+<ion-content class="grey" cache-view="false">
+  <ion-list class="message-list odd">
+    <ion-item *ngFor="let recipient of listOfRecipients"  (click)="addRemove(recipient.id)">
+      <ion-avatar item-left>
+        <img src="./assets/images/default-pic.png">
+      </ion-avatar>
+      <h2>{{recipient.name}}</h2>
+      <h3 class="text-light">{{recipient.title}}</h3>
+      <ion-icon *ngIf="!recipient.isAdded" item-content color="default" class="list-action-icon" name="ios-checkmark-circle-outline"></ion-icon>
+      <ion-icon *ngIf="recipient.isAdded" item-content color="primary" class="list-action-icon" name="ios-checkmark-circle"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<!-- new_conversation 
+  <ion-list no-lines class="new-list">
+    <ion-item>
+      <ion-row>
+        <ion-col col-3 class="text-light">{{newMessagePageStr.name}}</ion-col>
+        <ion-col>{{newMessagePageStr.morningShiftCrew}}</ion-col>
+      </ion-row>
+    </ion-item>
+
+    <div class="font-grey center title">{{newMessagePageStr.selectType}}</div>
+
+    <ion-item class="toggle-spacing">
+      <span item-left class="text-blue">{{newMessagePageStr.conversation}}</span>
+      <ion-toggle item-content color="base-blue" checked="true"></ion-toggle>
+      <ion-note item-right>{{newMessagePageStr.noreplies}}</ion-note>
+    </ion-item>
+
+    <div class="font-grey center title">{{newMessagePageStr.selectPeople}}</div>
+
+  </ion-list>-->
+<!--<ion-list class="message-list odd">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <h2>Cher</h2>
+      <h3 class="text-light">Supervisor</h3>
+      <ion-icon item-content color="danger" class="list-action-icon" name="close"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="./assets/images/jun-profile.jpg">
+      </ion-avatar>
+      <h2>Cher</h2>
+      <h3 class="text-light">Supervisor</h3>
+      <ion-icon item-content color="primary" class="list-action-icon" name="add"></ion-icon>
+    </ion-item>
+  </ion-list>
+-->
+
+<!-- new_message 
+  <div class="white" *ngIf="createMessage">
+    <ion-list class="message-list">
+      <button ion-item detail-none (click)="push(1)">
+      <ion-avatar item-left>
+        <img src="./assets/images/kun-profile.jpg">
+      </ion-avatar>
+      <h2>Cher</h2>
+      <h3 class="text-light">Supervisor</h3>
+      <ion-icon item-content color="primary" name="arrow-dropright"></ion-icon>
+    </button>
+      <button ion-item detail-none (click)="push(1)">
+      <ion-avatar item-left>
+        <img src="./assets/images/jun-profile.jpg">
+      </ion-avatar>
+      <h2>Cher</h2>
+      <h3 class="text-light">Supervisor</h3>
+      <ion-icon item-content color="primary" name="arrow-dropright"></ion-icon>
+    </button>
+    </ion-list>
+  </div>
+-->

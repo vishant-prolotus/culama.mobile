@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            {{homeStr}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="grey" cache-view="false">
+    <ion-list no-lines class="home-list">
+        <ion-item class="item-error" color="base-pink" *ngIf="!isConnected">{{homePageStr.noInternetConnection}}</ion-item>
+    </ion-list>
+    <ion-list no-lines class="home-list" (click)="openMSGpage()">
+        <ion-item>
+            <span item-left [ngClass]="msgBadgeClassMap">{{newMsgCount>99?"99+":newMsgCount}}</span>
+            <div [ngClass]="msgFontClassMap">{{newMsgCount === 0 ? homePageStr.noNewMessages:homePageStr.newMessages}}</div>
+            <ion-icon class="right" name="icon-messages" item-right></ion-icon>
+        </ion-item>
+    </ion-list>
+    <ion-list no-lines class="home-list">
+        <ion-item>
+            <span item-left [ngClass]="docBadgeClassMap">{{newDocumentsCount>99?"99+":newDocumentsCount}}</span>
+            <div [ngClass]="docFontClassMap">{{newDocumentsCount === 0 ? homePageStr.noNewDocuments:homePageStr.newDocuments}}</div>
+            <ion-icon class="right" name="icon-documents" item-right></ion-icon>
+        </ion-item>
+    </ion-list>
+    <ion-list no-lines class="home-list post-list">
+        <ion-item class="font-orange center"> {{newPostsCount+ ' ' + homePageStr.newPost}} </ion-item>
+        <!--<div class="font-grey center title">{{homePageStr.morningShiftCrew}}</div>
+        <ion-card class="full-width-card">
+            <ion-row class="post-header">
+                <span class="post-author">Margie Murrey</span>
+                <ion-note>21 Jan 2016 at 12:45 AM</ion-note>
+                <span class="icon-more"><ion-icon name="icon-more"></ion-icon></span>
+            </ion-row>
+            <ion-card-header color="base-grey">New info for you</ion-card-header>
+            <ion-card-content>
+                <p class="post-content">Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
+                    Whoa. This is heavy.</p>
+                <button class="no-padding" ion-button icon-left clear small>
+                    <div>{{homePageStr.readFullPost}}</div>
+                </button>
+            </ion-card-content>
+            <div class="divider"></div>
+            <ion-row>
+                <ion-col>
+                    <button ion-button icon-left clear small>
+                  <ion-icon name="icon-like"></ion-icon>
+                  <div>2</div>
+                </button>
+                </ion-col>
+                <ion-col text-right>
+                    <button ion-button icon-left clear small>
+                  <div>{{homePageStr.reply}}</div>
+                </button>
+                </ion-col>
+            </ion-row>
+        </ion-card>-->
+    </ion-list>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{messagesStr}}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openNew()">
+        <ion-icon name="ios-add-circle-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="grey" cache-view="false">
+  <div class="no-data-container" *ngIf="hasContent==1">
+    <img src="./assets/images/img@3x.png">
+    <p>{{noMessageStr}}</p>
+  </div>
+  <div class="white" *ngIf="hasContent==2">
+    <ion-list class="message-list">
+      <!--class="unread"-->
+      <ion-item ion-item detail-none *ngFor="let thread of msgThreads" (click)="push(thread.masterId, thread.from,thread.recipients,thread.messages)">
+        <ion-avatar item-left>
+          <img src="./assets/images/avatar@3x.png">
+          <span class="list-badge badge-dot"></span>
+        </ion-avatar>
+        <h3>{{thread.from}}
+          <!--<ion-icon name="play"></ion-icon><span class="text-light">Kitchen Staff</span>-->
+        </h3>
+        <p>{{thread.content}}</p>
+        <ion-note item-right>
+          <span>{{thread.date | amCalendar}}</span>
+        </ion-note>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
